@@ -1,0 +1,35 @@
+<div class="container">
+  <div *ngFor="let star of stars">
+    <mat-icon
+      *ngIf="show"
+      aria-label="star"
+      [ngStyle]="{
+        color: 'white',
+        position: 'absolute',
+        left: generateRandomStar('left'),
+        top: generateRandomStar('top')
+      }"
+      @fadeIn
+      @fadeOut
+      >star</mat-icon
+    >
+  </div>
+  <div class="title-language">
+    <div class="body-title-language">
+      <h1 [@pulseOnEnter]="{ value: '', params: { duration: 3000 } }">
+        Campos
+      </h1>
+      <p>{{ "Welcome" | translate }}</p>
+      <select #selectedLang (change)="switchLanguage(selectedLang.value)">
+        <option
+          *ngFor="let langague of translate.getLangs()"
+          [value]="langague"
+          [selected]="langague === translate.currentLang"
+        >
+          {{ langague === "pt" ? "Portugues" : "Ingles" }}
+        </option>
+      </select>
+      <button mat-button>OK</button>
+    </div>
+  </div>
+</div>

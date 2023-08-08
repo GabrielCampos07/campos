@@ -1,0 +1,58 @@
+.container {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 89%,
+    rgba(14, 17, 17, 1) 95%,
+    rgba(35, 43, 43, 1) 100%
+  );
+  height: 100vh;
+
+  .title-language,
+  .body-title-language {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-language {
+    .body-title-language {
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+
+      h1,
+      p {
+        color: white;
+        font-family: "Embezzler";
+      }
+
+      h1 {
+        font-size: 150px;
+      }
+
+      p {
+        font-size: 50px;
+      }
+    }
+
+    select {
+      width: 600px;
+      height: 40px;
+      font-size: 30px;
+      text-align: center;
+      font-family: "Embezzler";
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      clear: both;
+    }
+
+    ::ng-deep {
+      .mat-button {
+        background-color: white;
+      }
+    }
+  }
+}
