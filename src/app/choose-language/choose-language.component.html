@@ -19,7 +19,7 @@
       <h1 [@pulseOnEnter]="{ value: '', params: { duration: 3000 } }">
         Campos
       </h1>
-      <p>{{ "Welcome" | translate }}</p>
+      <p>{{ "EscolhaSuaLingua" | translate }}</p>
       <select #selectedLang (change)="switchLanguage(selectedLang.value)">
         <option
           *ngFor="let langague of translate.getLangs()"
