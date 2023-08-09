@@ -22,9 +22,12 @@
     "@angular/router": "~12.2.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "@types/howler": "^2.2.7",
     "angular-animations": "^0.11.0",
+    "howler": "^2.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "typeit": "^8.7.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

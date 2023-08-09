@@ -1,5 +1,16 @@
 {
-  "EscolhaSuaLingua": "Escolha sua língua",
   "Portuguese": "Portugues",
-  "English": "Ingles"
+  "English": "Ingles",
+  "Inicio": {
+    "EscolhaSuaLingua": "Escolha sua língua",
+    "BemVindo": "Bem-Vindo!"
+  },
+  "Menu": {
+    "Projetos": "Projetos",
+    "Cursos": "Cursos",
+    "Contato": "Contato"
+  },
+  "Campos": {
+    "SobreMim": "Primeiramente, peço desculpas, estamos enfrentando problemas técnicos aqui na nave. Enfim, oi! Meu nome é Gabriel Campos de Paula, mas pode me chamar apenas de Campos. Venho por meio deste para me apresentar. No momento, estou desempregado, mas já participei de diversos projetos, tais como: Desenvolvimento e manutenção de sistemas para mais de 1000 usuários em uma grande empresa do ramo de vidro, utilizando .NET Core, ASP.NET, AJAX, Razor, MySQL, GIT, Angular 2+ e AngularJS. Os demais projetos podem ser conferidos na aba de projetos! Também estou realizando alguns cursos de Angular atualmente, nos quais estou me especializando. Nessa nave, quis brincar um pouco com animações e permitir que minha imaginação fluísse, o que me possibilitou criar o que eu quisesse. Enfim, seja bem-vindo e aproveite essa viagem!"
+  }
 }

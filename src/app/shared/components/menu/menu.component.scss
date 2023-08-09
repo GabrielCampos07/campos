@@ -1,0 +1,56 @@
+.menu {
+  height: 0;
+  width: 50vw;
+
+  border-bottom: 100px solid rgba(14, 17, 17, 1);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-radius: 4px;
+
+  transform: rotate(180deg);
+
+  ul {
+    width: 100%;
+    list-style-type: none;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: space-around;
+
+    .bar {
+      border-right: 1px solid white;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.2);
+
+        mat-icon {
+          color: #90ee90;
+        }
+
+        a {
+          color: #90ee90;
+        }
+      }
+
+      mat-icon {
+        color: white;
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+      }
+
+      a {
+        font-family: "Embezzler";
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}

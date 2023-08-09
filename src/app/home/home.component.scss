@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: black;
+
+  .container-about-me {
+    height: 50%;
+    width: 50%;
+
+    #crt:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.25) 50%
+      );
+      background-size: 100% 8px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    #monitor {
+      background-color: black;
+      background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+      animation: glitch 1s ease-in-out 1.5s infinite;
+      border: 30px solid transparent;
+      border-image-source: url("../../assets/images/bazel.png");
+      border-image-slice: 30 fill;
+
+      .scanline-effect {
+        position: absolute;
+        overflow: hidden;
+      }
+
+      .scanlines {
+        position: absolute;
+        background: repeating-linear-gradient(
+          rgba(255, 255, 255, 0.05) 0px,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 2px,
+          transparent 4px
+        );
+        animation: scanline-scroll 2s linear infinite;
+      }
+
+      h2,
+      pre {
+        max-width: 100%;
+        word-wrap: break-word;
+        font-size: 2vh;
+        text-wrap: wrap;
+        font-family: "VT323", monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      h2 {
+        font-size: 3vh;
+        text-align: center;
+      }
+
+      pre {
+        font-size: 2vh;
+        padding: 30px;
+      }
+
+      a {
+        color: #90ee90;
+      }
+    }
+
+    @keyframes glitch {
+      0%,
+      100% {
+        transform: translate(0);
+        opacity: 1;
+      }
+      25% {
+        transform: translate(-2px, 2px);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translate(2px, -2px);
+        opacity: 1;
+      }
+      75% {
+        transform: translate(0px, 0px);
+        opacity: 0.9;
+      }
+    }
+
+    @keyframes scanline-scroll {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+}

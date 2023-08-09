@@ -5,17 +5,23 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'choose-language'
+    redirectTo: 'choose-language',
   },
   {
     path: 'choose-language',
-    loadChildren: () => import('./choose-language/choose-language.module')
-    .then(m => m.ChooseLanguageModule)
-  }
+    loadChildren: () =>
+      import('./choose-language/choose-language.module').then(
+        (m) => m.ChooseLanguageModule
+      ),
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

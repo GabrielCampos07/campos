@@ -14,22 +14,36 @@
       >star</mat-icon
     >
   </div>
-  <div class="title-language">
-    <div class="body-title-language">
+  <div class="title-language display-flex-center full-height">
+    <div
+      class="body-title-language display-flex-center full-height"
+      *ngIf="!isNextStep"
+      @fadeIn
+      @fadeOut
+    >
       <h1 [@pulseOnEnter]="{ value: '', params: { duration: 3000 } }">
         Campos
       </h1>
-      <p>{{ "EscolhaSuaLingua" | translate }}</p>
+      <p>{{ "Inicio.EscolhaSuaLingua" | translate }}</p>
       <select #selectedLang (change)="switchLanguage(selectedLang.value)">
+        <option value=""></option>
         <option
           *ngFor="let langague of translate.getLangs()"
           [value]="langague"
           [selected]="langague === translate.currentLang"
         >
-          {{ langague === "pt" ? "Portugues" : "Ingles" }}
+          {{
+            langague === "pt"
+              ? ("Portugues" | translate)
+              : ("Ingles" | translate)
+          }}
         </option>
       </select>
-      <button mat-button>OK</button>
+      <button mat-button (click)="nextStep()" [disabled]="!selectedLang.value">OK</button>
+    </div>
+
+    <div @fadeIn class="welcome display-flex-center full-height" *ngIf="isNextStep">
+      <h1>{{ "Inicio.BemVindo" | translate }}</h1>
     </div>
   </div>
 </div>

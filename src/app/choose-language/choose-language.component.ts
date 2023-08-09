@@ -2,13 +2,16 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { pulseOnEnterAnimation } from 'angular-animations';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+import { Howl } from 'howler';
 
 const enterTransition = transition(':enter', [
   style({
     opacity: 0,
   }),
   animate(
-    '1s ease-in',
+    1500,
     style({
       opacity: 1,
     })
@@ -20,7 +23,7 @@ const leaveTrans = transition(':leave', [
     opacity: 1,
   }),
   animate(
-    '1s ease-out',
+    500,
     style({
       opacity: 0,
     })
@@ -40,19 +43,25 @@ const fadeOut = trigger('fadeOut', [leaveTrans]);
 export class ChooseLanguageComponent implements OnInit {
   stars: number[] = [];
   show: boolean = true;
-  language: any;
+  isNextStep: boolean = false;
+  terminalSound: Howl | undefined;
 
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private router: Router) {
     this.stars.length = 100;
     translate.addLangs(['pt', 'en']);
     translate.setDefaultLang('pt');
+    window.localStorage.clear();
   }
 
   ngOnInit(): void {
     setInterval(() => (this.show = !this.show), 1500);
+
+    this.terminalSound = new Howl({
+      src: ['assets/sounds/dramatic-sound.mp3'],
+    });
   }
 
-  generateRandomStar(position?: string) {
+  generateRandomStar(position?: string): string {
     const screenWidht = window.innerWidth;
     const screenHeight = window.innerHeight;
 
@@ -65,8 +74,19 @@ export class ChooseLanguageComponent implements OnInit {
     return value + 'px';
   }
 
-  switchLanguage(lang: any) {
-    this.language = lang;
-    this.translate.use(lang);
+  switchLanguage(lang: string): void {
+    this.translate.use(lang || 'pt');
+    environment.language = lang || 'pt';
+  }
+
+  nextStep(): void {
+    this.stars.length = 0;
+    this.isNextStep = true;
+    window.localStorage.setItem('lang', environment.language || 'pt');
+    this.terminalSound?.play();
+
+    setTimeout(() => {
+      this.router.navigate(['/home']);
+    }, 2500);
   }
 }
