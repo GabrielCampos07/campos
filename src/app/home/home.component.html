@@ -1,18 +1,60 @@
 <div class="container">
   <app-menu></app-menu>
-  <div class="container-about-me">
-    <div id="monitor" class="full-width-height">
-      <div class="scanline-effect full-width-height">
-        <div class="scanlines full-width-height"></div>
-      </div>
-      <div id="bezel" class="full-width-height">
-        <div id="crt" class="off">
+  <div class="display-flex-center half-height">
+    <div class="container-about-me full-height half-width">
+      <div id="monitor" class="full-width-height">
+        <div class="full-width-height position-absolute overflow-hidden">
+          <div class="scanlines full-width-height position-absolute"></div>
+        </div>
+        <div class="full-width-height">
           <div class="full-width-height">
-            <h2>Sobre Mim</h2>
-            <pre id="output"><a>$></a>{{ typedText | translate }}</pre>
+            <h2
+              class="color-white font-vt323 text-uppercase text-align-center f-vh-3"
+            >
+              {{ "Campos.SobreMimTitulo" | translate }}
+            </h2>
+            <pre
+              id="output"
+              class="color-white font-vt323 text-uppercase f-vh-2 line-height-vw-2"
+            ><a>$></a>{{ typedText | translate }}</pre>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div
+    class="bottom-vw-3 left-vw-4 display-flex-center flex-collumn position-absolute"
+  >
+    <div class="speech-bubble position-relative width-vw-5">
+      <div class="position-relative">
+        <p class="font-vt323 text-uppercase">
+          {{ "Campos.Localizacao" | translate }}
+        </p>
+      </div>
+    </div>
+    <a
+      class="planet cursor-pointer width-px-200 height-px-200"
+      href="https://www.tripadvisor.com.br/Attractions-g303629-Activities-
+        Sao_Jose_Dos_Campos_State_of_Sao_Paulo.html"
+      target="_blank"
+    ></a>
+  </div>
+  <!-- <div class="container-me">
+    <div class="text-picture">
+      <img src="assets/images/eu.jpg" alt="Campos" />
+      <div class="text">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+  </div> -->
 </div>

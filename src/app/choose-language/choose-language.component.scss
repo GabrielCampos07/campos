@@ -1,3 +1,5 @@
+@use "../../assets/styles/styles.scss";
+
 .container {
   background: radial-gradient(
     circle,
@@ -6,38 +8,7 @@
     rgba(35, 43, 43, 1) 100%
   );
 
-  h1,
-  p {
-    color: white;
-    font-family: "Embezzler";
-  }
-
-  h1 {
-    font-size: 150px;
-  }
-
   .title-language {
-    .body-title-language {
-      flex-direction: column;
-      gap: 30px;
-
-      p {
-        font-size: 50px;
-      }
-    }
-
-    .welcome {
-      position: absolute;
-    }
-
-    select {
-      width: 600px;
-      height: 40px;
-      font-size: 30px;
-      text-align: center;
-      font-family: "Embezzler";
-    }
-
     button {
       display: block;
       margin: 0 auto;

@@ -3,9 +3,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
-import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    TranslateModule.forRoot()
+    TranslateModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

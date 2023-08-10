@@ -11,6 +11,8 @@
     "Contato": "Contact"
   },
   "Campos": {
-    "SobreMim": "First of all, I apologize, we are experiencing technical issues here on the spaceship. Anyway, hello! My name is Gabriel Campos de Paula, but you can just call me Campos. I've come through this means to introduce myself. Currently, I'm unemployed, but I have already participated in various projects. Such as: \n Development and maintenance of systems for 1000+ users in a large glass industry company using .NET Core, ASP.NET, AJAX, Razor, MySQL, GIT, Angular2+, and AngularJS. \n You can see the rest of the projects in the projects tab! \n I'm also taking some ongoing Angular courses, which I'm specializing in. \n In this spaceship, I wanted to play around with animations a bit and let my imagination flow, allowing me to create whatever I want. Anyway, welcome aboard and enjoy this journey!"
+    "SobreMimTitulo": "About Me",
+    "SobreMimTexto": "First of all, I apologize, we are experiencing technical issues here on the spaceship. Anyway, hello! My name is Gabriel Campos de Paula, but you can just call me Campos. I've come through this means to introduce myself. Currently, I'm unemployed, but I have already participated in various projects. Such as: \n Development and maintenance of systems for 1000+ users in a large glass industry company using .NET Core, ASP.NET, AJAX, Razor, MySQL, GIT, Angular2+, and AngularJS. \n You can see the rest of the projects in the projects tab! \n I'm also taking some ongoing Angular courses, which I'm specializing in. \n In this spaceship, I wanted to play around with animations a bit and let my imagination flow, allowing me to create whatever I want. Anyway, welcome aboard and enjoy this journey!",
+    "Localizacao": "I am located in São José dos Campos, São Paulo. Come and visit!"
   }
 }

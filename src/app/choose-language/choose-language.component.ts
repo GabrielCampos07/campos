@@ -58,6 +58,7 @@ export class ChooseLanguageComponent implements OnInit {
 
     this.terminalSound = new Howl({
       src: ['assets/sounds/dramatic-sound.mp3'],
+      volume: 0.2
     });
   }
 

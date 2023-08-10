@@ -1,109 +1,88 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
-  background: black;
+@use "../../assets/styles/styles.scss";
+@use "../../assets/styles/keyframes.scss";
+@import "../../assets/styles/variables";
 
-  .container-about-me {
-    height: 50%;
-    width: 50%;
+.container-about-me {
+  margin-top: 10vw;
 
-    #crt:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(18, 16, 16, 0) 50%,
-        rgba(0, 0, 0, 0.25) 50%
+  #monitor {
+    animation: glitch 1s ease-in-out 1.5s infinite;
+
+    background-color: $background-color;
+    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+
+    border: 30px solid transparent;
+    border-image-source: url("../../assets/images/bazel.png");
+    border-image-slice: 30 fill;
+
+    .scanlines {
+      animation: scanline-scroll 2s linear infinite;
+
+      background: repeating-linear-gradient(
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 2px,
+        transparent 4px
       );
-      background-size: 100% 8px;
-      z-index: 2;
-      pointer-events: none;
     }
 
-    #monitor {
-      background-color: black;
-      background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
-      animation: glitch 1s ease-in-out 1.5s infinite;
-      border: 30px solid transparent;
-      border-image-source: url("../../assets/images/bazel.png");
-      border-image-slice: 30 fill;
-
-      .scanline-effect {
-        position: absolute;
-        overflow: hidden;
-      }
-
-      .scanlines {
-        position: absolute;
-        background: repeating-linear-gradient(
-          rgba(255, 255, 255, 0.05) 0px,
-          rgba(255, 255, 255, 0.05) 1px,
-          transparent 2px,
-          transparent 4px
-        );
-        animation: scanline-scroll 2s linear infinite;
-      }
-
-      h2,
-      pre {
-        max-width: 100%;
-        word-wrap: break-word;
-        font-size: 2vh;
-        text-wrap: wrap;
-        font-family: "VT323", monospace;
-        text-transform: uppercase;
-        color: white;
-      }
-
-      h2 {
-        font-size: 3vh;
-        text-align: center;
-      }
-
-      pre {
-        font-size: 2vh;
-        padding: 30px;
-      }
-
-      a {
-        color: #90ee90;
-      }
+    h2,
+    pre {
+      max-width: 100%;
+      word-wrap: break-word;
+      text-wrap: wrap;
     }
 
-    @keyframes glitch {
-      0%,
-      100% {
-        transform: translate(0);
-        opacity: 1;
-      }
-      25% {
-        transform: translate(-2px, 2px);
-        opacity: 0.8;
-      }
-      50% {
-        transform: translate(2px, -2px);
-        opacity: 1;
-      }
-      75% {
-        transform: translate(0px, 0px);
-        opacity: 0.9;
-      }
+    pre {
+      padding: 18px;
     }
 
-    @keyframes scanline-scroll {
-      0% {
-        transform: translateY(-100%);
-      }
-      100% {
-        transform: translateY(0);
-      }
+    a {
+      color: $hover-color;
     }
   }
 }
+
+.planet {
+  background-image: url("../../assets/images/planet.png");
+  background-size: cover;
+  background-position: center;
+  animation: rotatePlanet 10s linear infinite;
+}
+
+.speech-bubble {
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// .container-me {
+//   .text-picture {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 2px;
+
+//     img {
+//       width: 120px;
+//       border: 10px solid transparent;
+//       border-image: linear-gradient(to bottom, #383e3f, #f0f0f0, #383e3f) 1;
+//       border-image-slice: 1;
+//     }
+
+//     .text {
+//       width: 50%;
+//       color: $text-color;
+//       border: 10px solid transparent;
+//       border-image: linear-gradient(to bottom, #383e3f, #f0f0f0, #383e3f) 1;
+//       border-image-slice: 1;
+//       padding: 10px;
+
+//       p {
+//         font-family: "VT323", monospace;
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+// }

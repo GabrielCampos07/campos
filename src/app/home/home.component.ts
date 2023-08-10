@@ -15,28 +15,24 @@ export class HomeComponent implements OnInit {
   cursorBlink = true;
   animationInterval: any;
   terminalSound: Howl | undefined;
-  spaceTravelSound: Howl | undefined;
 
   constructor(private translate: TranslateService) {
     this.translate.use(environment.language || 'pt');
   }
 
   ngOnInit(): void {
-    const textToType = 'Campos.SobreMim';
+    const textToType = 'Campos.SobreMimTexto';
 
     this.typeText(textToType);
 
-    this.spaceTravelSound = new Howl({
-      src: ['assets/sounds/space-travel-sound.mp3'],
-    });
-
     this.terminalSound = new Howl({
       src: ['assets/sounds/typing-sound.mp3'],
+      volume: 0.1,
     });
+  }
 
-    // setInterval(() => {
-    //   this.spaceTravelSound?.play();
-    // }, 15000);
+  ngOnDestroy() {
+    this.terminalSound?.pause();
   }
 
   typeText(text: string): Promise<void> {
@@ -52,7 +48,6 @@ export class HomeComponent implements OnInit {
           clearInterval(typeInterval);
           resolve();
           this.terminalSound?.pause();
-          // this.spaceTravelSound?.play();
         }
       }, 100);
     });

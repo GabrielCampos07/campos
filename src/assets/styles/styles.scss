@@ -1,0 +1,148 @@
+@import "../../assets/styles/variables";
+
+// flex-styles
+.container {
+  height: 100vh;
+  background: $background-color;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-collumn {
+  flex-direction: column;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+@for $i from 4 through 64 {
+  .gap-#{$i} {
+    gap: #{$i}px;
+  }
+}
+
+//size styles
+.full-height {
+  height: 100%;
+}
+
+.half-height {
+  height: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width-height {
+  width: 100%;
+  height: 100%;
+}
+
+.half-width-height {
+  width: 50%;
+  height: 50%;
+}
+
+@for $i from 1 through 680 {
+  .width-px-#{$i} {
+    width: #{$i}px;
+  }
+
+  .height-px-#{$i} {
+    height: #{$i}px;
+  }
+
+  .width-vw-#{$i} {
+    width: #{$i}vw;
+  }
+
+  .height-vh-#{$i} {
+    height: #{$i}vh;
+  }
+}
+
+//fonts
+.color-white {
+  color: $text-color;
+}
+
+.font-embezzler {
+  font-family: "Embezzler";
+}
+
+.font-vt323 {
+  font-family: "VT323", monospace;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+@for $i from 1 through 150 {
+  .f-#{$i} {
+    font-size: #{$i}px;
+  }
+
+  .f-vh-#{$i} {
+    font-size: #{$i}vh;
+  }
+
+  .line-height-vw-#{$i} {
+    line-height: #{$i}vw;
+  }
+}
+
+//position
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+@for $i from 1 through 10 {
+  .bottom-vw-#{$i} {
+    bottom: #{$i}vw;
+  }
+
+  .bottom-vh-#{$i} {
+    bottom: #{$i}vh;
+  }
+
+  .left-vw-#{$i} {
+    left: #{$i}vw;
+  }
+
+  .left-vh-#{$i} {
+    left: #{$i}vh;
+  }
+}
+
+//cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//overflow
+.overflow-hidden {
+  overflow: hidden;
+}

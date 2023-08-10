@@ -16,16 +16,25 @@
   </div>
   <div class="title-language display-flex-center full-height">
     <div
-      class="body-title-language display-flex-center full-height"
+      class="body-title-language display-flex-center full-height flex-collumn gap-30"
       *ngIf="!isNextStep"
       @fadeIn
       @fadeOut
     >
-      <h1 [@pulseOnEnter]="{ value: '', params: { duration: 3000 } }">
+      <h1
+        class="font-embezzler color-white f-150"
+        [@pulseOnEnter]="{ value: '', params: { duration: 3000 } }"
+      >
         Campos
       </h1>
-      <p>{{ "Inicio.EscolhaSuaLingua" | translate }}</p>
-      <select #selectedLang (change)="switchLanguage(selectedLang.value)">
+      <p class="font-embezzler color-white f-50">
+        {{ "Inicio.EscolhaSuaLingua" | translate }}
+      </p>
+      <select
+        #selectedLang
+        (change)="switchLanguage(selectedLang.value)"
+        class="font-embezzler text-align-center f-30 width-px-600 height-px-40"
+      >
         <option value=""></option>
         <option
           *ngFor="let langague of translate.getLangs()"
@@ -39,11 +48,19 @@
           }}
         </option>
       </select>
-      <button mat-button (click)="nextStep()" [disabled]="!selectedLang.value">OK</button>
+      <button mat-button (click)="nextStep()" [disabled]="!selectedLang.value">
+        OK
+      </button>
     </div>
 
-    <div @fadeIn class="welcome display-flex-center full-height" *ngIf="isNextStep">
-      <h1>{{ "Inicio.BemVindo" | translate }}</h1>
+    <div
+      @fadeIn
+      class="display-flex-center full-height position-absolute"
+      *ngIf="isNextStep"
+    >
+      <h1 class="color-white font-embezzler f-150">
+        {{ "Inicio.BemVindo" | translate }}
+      </h1>
     </div>
   </div>
 </div>

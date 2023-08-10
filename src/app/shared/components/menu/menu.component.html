@@ -1,11 +1,43 @@
-<div class="menu">
-  <ul>
-    <li><mat-icon>home</mat-icon><a>Campos</a></li>
+<div class="menu width-vw-50 height-px-50">
+  <ul class="display-flex justify-content-space-around">
+    <li
+      class="display-flex-center flex-collumn cursor-pointer"
+      routerLink="/home"
+    >
+      <mat-icon class="color-white width-px-50 height-px-50 f-50">home</mat-icon
+      ><a class="color-white font-embezzler f-25">Campos</a>
+    </li>
     <div class="bar"></div>
-    <li><mat-icon>assignment</mat-icon><a>{{"Menu.Projetos" | translate}}</a></li>
+    <li
+      class="display-flex-center flex-collumn cursor-pointer"
+      routerLink="/projects"
+    >
+      <mat-icon class="color-white width-px-50 height-px-50 f-50"
+        >assignment</mat-icon
+      ><a class="color-white font-embezzler f-25">{{
+        "Menu.Projetos" | translate
+      }}</a>
+    </li>
     <div class="bar"></div>
-    <li><mat-icon>book</mat-icon><a>{{"Menu.Cursos" | translate}}</a></li>
+    <li
+      class="display-flex-center flex-collumn cursor-pointer"
+      routerLink="/courses"
+    >
+      <mat-icon class="color-white width-px-50 height-px-50 f-50">book</mat-icon
+      ><a class="color-white font-embezzler f-25">{{
+        "Menu.Cursos" | translate
+      }}</a>
+    </li>
     <div class="bar"></div>
-    <li><mat-icon>account_box</mat-icon><a>{{"Menu.Contato" | translate}}</a></li>
+    <li
+      class="display-flex-center flex-collumn cursor-pointer"
+      routerLink="/contact"
+    >
+      <mat-icon class="color-white width-px-50 height-px-50 f-50"
+        >account_box</mat-icon
+      ><a class="color-white font-embezzler f-25">{{
+        "Menu.Contato" | translate
+      }}</a>
+    </li>
   </ul>
 </div>
