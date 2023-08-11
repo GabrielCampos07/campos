@@ -8,5 +8,5 @@ Meu nome é **Gabriel Campos de Paula** e sou um **Desenvolvedor FrontEnd especi
 
 ## Contato
 
-- **Email**(gabriel.c.depaula@gmail.com)
-- **LinkedIn**(https://www.linkedin.com/in/gabrielcampos07/)
+- **Email**: gabriel.c.depaula@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/gabrielcampos07/
