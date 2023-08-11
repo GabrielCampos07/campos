@@ -1,27 +1,12 @@
-# Campos
+# Portfólio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+Bem-vindo ao meu repositório de portfólio! Aqui você encontrará uma coleção dos meus projetos e trabalhos dos últimos anos que demonstram minhas habilidades e experiências. Sinta-se à vontade para explorar e entrar em contato comigo se tiver alguma pergunta ou oportunidade de colaboração.
 
-## Development server
+## Sobre Mim
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Meu nome é **Gabriel Campos de Paula** e sou um **Desenvolvedor FrontEnd especializado em Angular** com paixão por **aprender e me aprofundar na linguagem**. Estou constantemente buscando aprender coisas novas e aprimorar minhas habilidades técnicas. Meu objetivo é **Aprimorar cada vez mais meu conhecimento** para que futuramente eu possa ser um especialista na linguagem.
 
-## Code scaffolding
+## Contato
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Email**: gabriel.c.depaula@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/gabrielcampos07/
