@@ -193,3 +193,10 @@
 .overflow-y-auto {
   overflow-y: auto;
 }
+
+//transform
+@for $i from 1 through 180 {
+  .transform-rotate-#{$i} {
+    transform: rotate(#{$i}deg);
+  }
+}
