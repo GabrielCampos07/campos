@@ -1,3 +1,20 @@
 <div class="container">
   <app-menu></app-menu>
+  <div class="display-flex-center height-percent-80">
+    <div
+      class="tablet width-percent-80 height-percent-80 display-flex-center position-relative overflow-hidden border-radius-20"
+    >
+      <div
+        class="overflow-hidden overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
+      >
+        <div
+          class="full-width-height justify-content-space-between display-flex flex-wrap"
+        >
+          <div class="card" *ngFor="let project of projects">
+            <img [src]="project.img" alt="cebrace-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

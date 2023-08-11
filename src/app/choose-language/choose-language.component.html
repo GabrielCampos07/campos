@@ -48,7 +48,12 @@
           }}
         </option>
       </select>
-      <button mat-button (click)="nextStep()" [disabled]="!selectedLang.value">
+      <button
+        mat-button
+        class="display-block"
+        (click)="nextStep()"
+        [disabled]="!selectedLang.value"
+      >
         OK
       </button>
     </div>

@@ -7,17 +7,12 @@
   border-bottom: 100px solid rgba(14, 17, 17, 1);
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-radius: 4px;
 
   transform: rotate(180deg);
 
   ul {
     list-style-type: none;
     transform: rotate(180deg);
-
-    .bar {
-      border-right: 1px solid $text-color;
-    }
 
     li {
       transition: 1s;
@@ -33,6 +28,16 @@
           color: $hover-color;
         }
       }
+    }
+  }
+
+  .active {
+    mat-icon {
+      color: $hover-color;
+    }
+
+    a {
+      color: $hover-color;
     }
   }
 }

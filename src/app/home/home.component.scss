@@ -53,36 +53,5 @@
 .speech-bubble {
   padding: 15px 20px;
   background-color: #ffffff;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-// .container-me {
-//   .text-picture {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 2px;
-
-//     img {
-//       width: 120px;
-//       border: 10px solid transparent;
-//       border-image: linear-gradient(to bottom, #383e3f, #f0f0f0, #383e3f) 1;
-//       border-image-slice: 1;
-//     }
-
-//     .text {
-//       width: 50%;
-//       color: $text-color;
-//       border: 10px solid transparent;
-//       border-image: linear-gradient(to bottom, #383e3f, #f0f0f0, #383e3f) 1;
-//       border-image-slice: 1;
-//       padding: 10px;
-
-//       p {
-//         font-family: "VT323", monospace;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }

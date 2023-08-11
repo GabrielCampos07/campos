@@ -1,43 +1,17 @@
-<div class="menu width-vw-50 height-px-50">
+<div class="menu width-vw-50 height-px-50 border-radius-4">
   <ul class="display-flex justify-content-space-around">
     <li
+      *ngFor="let menu of menuItems"
       class="display-flex-center flex-collumn cursor-pointer"
-      routerLink="/home"
+      [routerLink]="menu.routeName"
+      routerLinkActive="active"
     >
-      <mat-icon class="color-white width-px-50 height-px-50 f-50">home</mat-icon
-      ><a class="color-white font-embezzler f-25">Campos</a>
-    </li>
-    <div class="bar"></div>
-    <li
-      class="display-flex-center flex-collumn cursor-pointer"
-      routerLink="/projects"
-    >
-      <mat-icon class="color-white width-px-50 height-px-50 f-50"
-        >assignment</mat-icon
-      ><a class="color-white font-embezzler f-25">{{
-        "Menu.Projetos" | translate
-      }}</a>
-    </li>
-    <div class="bar"></div>
-    <li
-      class="display-flex-center flex-collumn cursor-pointer"
-      routerLink="/courses"
-    >
-      <mat-icon class="color-white width-px-50 height-px-50 f-50">book</mat-icon
-      ><a class="color-white font-embezzler f-25">{{
-        "Menu.Cursos" | translate
-      }}</a>
-    </li>
-    <div class="bar"></div>
-    <li
-      class="display-flex-center flex-collumn cursor-pointer"
-      routerLink="/contact"
-    >
-      <mat-icon class="color-white width-px-50 height-px-50 f-50"
-        >account_box</mat-icon
-      ><a class="color-white font-embezzler f-25">{{
-        "Menu.Contato" | translate
-      }}</a>
+      <mat-icon class="color-white width-px-50 height-px-50 f-50">
+        {{ menu.icon }}</mat-icon
+      >
+      <a class="color-white font-embezzler f-25">
+        {{ menu.titleName | translate }}
+      </a>
     </li>
   </ul>
 </div>

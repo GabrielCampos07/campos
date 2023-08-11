@@ -1,11 +1,16 @@
 @import "../../assets/styles/variables";
 
-// flex-styles
 .container {
   height: 100vh;
   background: $background-color;
 }
 
+//display block
+.display-block {
+  display: block;
+}
+
+// flex-styles
 .display-flex {
   display: flex;
 }
@@ -20,8 +25,16 @@
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-content-space-around {
   justify-content: space-around;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
 }
 
 @for $i from 4 through 64 {
@@ -30,7 +43,7 @@
   }
 }
 
-//size styles
+//size
 .full-height {
   height: 100%;
 }
@@ -72,6 +85,20 @@
 
   .height-vh-#{$i} {
     height: #{$i}vh;
+  }
+
+  .height-percent-#{$i} {
+    height: #{$i} + "%";
+  }
+  .width-percent-#{$i} {
+    width: #{$i} + "%";
+  }
+}
+
+//border
+@for $i from 1 through 30 {
+  .border-radius-#{$i} {
+    border-radius: #{$i}px;
   }
 }
 
@@ -120,6 +147,22 @@
 }
 
 @for $i from 1 through 10 {
+  .top-vw-#{$i} {
+    top: #{$i}vw;
+  }
+
+  .top-vh-#{$i} {
+    top: #{$i}vh;
+  }
+
+  .right-vw-#{$i} {
+    right: #{$i}vw;
+  }
+
+  .right-vh-#{$i} {
+    right: #{$i}vh;
+  }
+
   .bottom-vw-#{$i} {
     bottom: #{$i}vw;
   }
@@ -145,4 +188,8 @@
 //overflow
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
