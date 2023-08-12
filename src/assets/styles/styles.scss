@@ -5,6 +5,38 @@
   background: $background-color;
 }
 
+//backgrounds
+.background-screens {
+  background-color: $background-color;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+}
+
+.cebrace-background {
+  background: linear-gradient(to top, orange, transparent);
+}
+
+.poliedro-background {
+  background: linear-gradient(to top, rgb(28, 108, 248), transparent);
+}
+
+.multilaser-background {
+  background: linear-gradient(
+    to top,
+    rgb(9, 159, 213),
+    rgb(127, 240, 244),
+    transparent
+  );
+}
+
+.viasat-background {
+  background: linear-gradient(
+    to top,
+    rgb(47, 136, 245),
+    rgb(133, 255, 103),
+    transparent
+  );
+}
+
 //display block
 .display-block {
   display: block;
@@ -102,6 +134,13 @@
   }
 }
 
+//padding
+@for $i from 1 through 30 {
+  .padding-#{$i} {
+    padding: #{$i}px;
+  }
+}
+
 //fonts
 .color-white {
   color: $text-color;
@@ -132,9 +171,19 @@
     font-size: #{$i}vh;
   }
 
+  .f-vw-#{$i} {
+    font-size: #{$i}vw;
+  }
+
   .line-height-vw-#{$i} {
     line-height: #{$i}vw;
   }
+}
+
+.font-limited {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 //position
@@ -180,6 +229,10 @@
   }
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+
 //cursor
 .cursor-pointer {
   cursor: pointer;
@@ -192,6 +245,10 @@
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 //transform

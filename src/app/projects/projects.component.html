@@ -5,13 +5,35 @@
       class="tablet width-percent-80 height-percent-80 display-flex-center position-relative overflow-hidden border-radius-20"
     >
       <div
-        class="overflow-hidden overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
+        class="card-container padding-10 overflow-hidden background-screens overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
       >
         <div
-          class="full-width-height justify-content-space-between display-flex flex-wrap"
+          class="gap-10 full-width-height justify-content-space-around display-flex flex-wrap"
         >
-          <div class="card" *ngFor="let project of projects">
-            <img [src]="project.img" alt="cebrace-logo" />
+          <div
+            class="card border-radius-5 width-vw-20 height-vh-25 display-flex flex-collumn"
+            *ngFor="let project of projects; let index = index"
+            (mouseover)="cursorInIndex = index"
+            (mouseout)="cursorInIndex = undefined"
+          >
+            <img
+              class="border-radius-5 cursor-pointer full-width-height"
+              [src]="project.img"
+              [alt]="project.company + '-logo'"
+            />
+            <div
+              class="position-absolute bottom-0 cursor-pointer full-width"
+              [style.opacity]="0"
+              [class.show]="cursorInIndex === index"
+              [class]="project.company.toLowerCase() + '-background'"
+            >
+              <h1 class="f-vw-1 font-vt323">
+                {{ project.name.toUpperCase() }}
+              </h1>
+              <p class="f-15 font-vt323 font-limited">
+                {{ project.description }}
+              </p>
+            </div>
           </div>
         </div>
       </div>

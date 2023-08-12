@@ -9,6 +9,7 @@ import { Projects } from '../shared/models/projects';
 })
 export class ProjectsComponent implements OnInit {
   projects: Projects[] = [];
+  cursorInIndex?: number = undefined;
 
   constructor(private projectsService: ProjectsService) {}
 

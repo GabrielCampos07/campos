@@ -1,86 +1,79 @@
 [
   {
     "id": 1,
-    "name": "SISDOC Colombia",
+    "name": "SISDOC",
     "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "description": "SISDOC trata-se de um software desenvolvido para gerenciar e automatizar o processo de criação, armazenamento, organização, recuperação e compartilhamento de documentos em uma organização. O objetivo principal do SISDOC é melhorar a eficiência e a eficácia do fluxo de trabalho relacionado à documentação, reduzindo a dependência de processos manuais e papel. \n Os recursos e funcionalidades do SISDOC incluem: \n Armazenamento e Organização: O SISDOC oferece um local centralizado para armazenar todos os tipos de documentos, como relatórios, memorandos, contratos, políticas, manuais e muito mais. Esses documentos são organizados em categorias ou pastas para facilitar a navegação e recuperação. \n Indexação e Busca: Os documentos são indexados com metadados relevantes, como título, data, autor e palavras-chave, tornando-os facilmente pesquisáveis. A funcionalidade de busca permite que os usuários localizem rapidamente os documentos necessários. \n Controle de Versão: O SISDOC geralmente oferece recursos de controle de versão para rastrear as diferentes iterações de um documento à medida que ele é editado e atualizado ao longo do tempo. Isso ajuda a evitar a confusão entre as versões mais recentes e anteriores. \n Fluxo de Aprovação: Para documentos que exigem revisão ou aprovação, um SISDOC pode implementar fluxos de trabalho automatizados que direcionam os documentos para as pessoas certas para revisão e aprovação, garantindo que os processos sejam seguidos de maneira consistente. \n Segurança e Permissões: Um sistema de documentação geralmente permite definir níveis de acesso e permissões para diferentes usuários ou grupos. Isso garante que apenas pessoas autorizadas tenham acesso a documentos sensíveis ou confidenciais. \n Colaboração: O SISDOC pode facilitar a colaboração entre membros da equipe, permitindo que várias pessoas trabalhem em um documento simultaneamente e vejam as alterações em tempo real. \n Backup e Recuperação: Os SISDOC têm medidas de segurança, como backups regulares, para garantir que os documentos não sejam perdidos devido a falhas de hardware ou erros humanos. \n Integração: Em algumas organizações, O SISDOC pode ser integrado a outros sistemas, como sistemas de gestão de projetos ou ferramentas de colaboração, para fornecer uma experiência de trabalho mais integrada. \n O uso do SISDOC resultou em uma melhoria significativa na eficiência, na colaboração e na organização de documentos, poupando tempo e recursos valiosos.",
+    "img": "assets/images/cebrace.jpg"
   },
   {
     "id": 2,
-    "name": "Testando",
+    "name": "Descontos",
     "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "description": "Loren Ipsulun",
+    "img": "assets/images/cebrace.jpg"
   },
   {
     "id": 3,
-    "name": "Testando",
+    "name": "Ecommerce",
     "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "description": "O ecommerce é a plataforma online oficial da Cebrace, líder em produção de vidro plano. Oferecendo uma experiência de compra conveniente e abrangente, o ecommerce permite que os clientes explorem a variedade de produtos de vidro oferecidos pela Cebrace e façam pedidos com facilidade. \n Catálogo de Produtos: \n Categorias claras e organizadas: \n Cada categoria exibe uma variedade de produtos específicos, como vidros temperados, laminados, espelhos e outros tipos de vidro. \n Páginas de Produto: \n Páginas individuais para cada produto, com imagens de alta qualidade, descrições detalhadas, especificações técnicas e opções de personalização. Informações sobre aplicações recomendadas e características únicas de cada tipo de vidro. \n Carrinho de Compras e Checkout: \n Os clientes podem adicionar produtos ao carrinho de compras e revisá-lo a qualquer momento. \n Processo de checkout simplificado com opções de pagamento seguro, incluindo cartões de crédito, débito e PayPal. \n Opções de cálculo de frete baseadas na localização do cliente. \n Área do Cliente: \n Os clientes podem criar contas para rastrear pedidos, histórico de compras, salvar endereços de entrega frequentes e informações de pagamento. \n Possibilidade de receber notificações sobre status de pedidos e ofertas especiais. \n Avaliações e Comentários: \n Os clientes podem deixar avaliações e comentários sobre os produtos que compraram, fornecendo feedback útil para outros compradores. \n Suporte ao Cliente: \n Canal de atendimento ao cliente para responder perguntas, fornecer assistência e resolver problemas. \n Notícias e Dicas: \n Seção com artigos informativos sobre tendências em vidro, dicas de decoração, segurança e uso de diferentes tipos de vidro. \n Garantia e Qualidade: \n Informações detalhadas sobre os padrões de qualidade da Cebrace e garantia dos produtos. \n Benefícios: \n Escolha Confiável: Os clientes têm acesso aos produtos de vidro de alta qualidade fabricados pela Cebrace. \n Customização: Opções para personalizar tamanhos e acabamentos de vidro. \n Atendimento Personalizado: Suporte ao cliente para ajudar na escolha do produto certo. \n Segurança: Pagamento seguro e informações de cliente protegidas. \n Conveniência: Compras online a qualquer momento, sem a necessidade de visitar fisicamente uma loja. \n",
+    "img": "assets/images/cebrace.jpg"
   },
   {
     "id": 4,
-    "name": "Testando",
+    "name": "SRO (Sistema de Reclamação)",
     "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "description": "O SRO é um conjunto organizado de processos, procedimentos e ferramentas que uma empresa ou organização implementa para lidar com reclamações de clientes ou usuários. \n O objetivo principal de um sistema de reclamação é gerenciar eficazmente as reclamações dos clientes, resolver problemas de forma adequada e fornecer um canal para feedback construtivo, melhorando assim a satisfação do cliente e a qualidade dos produtos ou serviços oferecidos. \n O SRO inclue os seguintes componentes: \n Registro de Reclamações: As reclamações são registradas e documentadas, incluindo detalhes sobre o cliente, a natureza da reclamação, datas e outros dados relevantes. \n Classificação e Priorização: As reclamações são avaliadas e classificadas com base em sua gravidade, impacto no cliente e outros fatores, permitindo que a Cebrace priorize as resoluções. \n Investigação e Análise: As reclamações são investigadas para entender a causa raiz do problema. Isso pode envolver colaboração com diferentes departamentos para obter informações e soluções. \n Feedback Interno: As informações coletadas das reclamações são analisadas internamente para identificar tendências e áreas de melhoria. Isso ajuda a Cebrace a evitar problemas recorrentes. \n Aprendizado e Melhoria Contínua: Os insights obtidos das reclamações são usados para ajustar processos, melhorar produtos ou serviços e implementar mudanças que evitem reclamações semelhantes no futuro. \n O SRO ajudou a construir a confiança dos clientes, melhorar a reputação da empresa e fornecer oportunidades valiosas para o aprimoramento dos produtos e serviços. ",
+    "img": "assets/images/cebrace.jpg"
   },
   {
     "id": 5,
-    "name": "Testando",
+    "name": "SISCOM",
     "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "description": "SISCOM é usado para descrever sistemas de software que auxiliam no gerenciamento de várias atividades comerciais, como vendas, estoque, compras e operações relacionadas a negócios. \n As características e funcionalidades do SISCOM incluem: \n Gestão de Vendas: Acompanha e registra as transações de vendas, gerencia pedidos de clientes, cálculos de preços, descontos e rastreamento de vendas. \n Gestão de Estoque: Controla o estoque de produtos, monitorando a entrada e saída de itens, realizando reabastecimentos automáticos quando necessário e evitando a falta de produtos. \n Gestão de Compras: Auxilia no processo de aquisição de produtos e materiais, desde a criação de pedidos de compra até o acompanhamento das entregas e pagamentos. \n Controle de Fornecedores: Mantém registros de informações de fornecedores, facilitando a comunicação e o relacionamento com essas partes interessadas. \n Relatórios e Análises: Gera relatórios e análises que fornecem insights sobre o desempenho comercial, permitindo que a empresa tome decisões informadas. \n Integração: Pode ser integrado a outros sistemas, como sistemas de contabilidade, sistemas de pagamento, sistemas de gestão de relacionamento com o cliente (CRM) e muito mais. \n A implementação de um SISCOM beneficiou a Cebrace ao melhorar a eficiência operacional, a tomada de decisões informadas e a gestão de recursos.",
+    "img": "assets/images/cebrace.jpg"
   },
   {
     "id": 6,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "Tarefas e Recados",
+    "company": "Poliedro",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/poliedro.jpg"
   },
   {
     "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "HD Virtual",
+    "company": "Poliedro",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/poliedro.jpg"
   },
   {
     "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "Banco de Questões",
+    "company": "Poliedro",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/poliedro.jpg"
   },
   {
     "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "Itinerários Informativos",
+    "company": "Poliedro",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/poliedro.jpg"
   },
   {
     "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "Multi+",
+    "company": "Multilaser",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/multilaser.jpeg"
   },
   {
     "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Testando",
-    "company": "Cebrace",
-    "description": "Loren Ipsulun e os caralho",
-    "img": "../../../assets/images/cebrace.jpg"
+    "name": "Viasat On Tech",
+    "company": "Viasat",
+    "description": "Loren Ipsulun",
+    "img": "assets/images/viasat.jpg"
   }
 ]

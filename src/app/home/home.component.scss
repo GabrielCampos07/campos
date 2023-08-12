@@ -8,9 +8,6 @@
   #monitor {
     animation: glitch 1s ease-in-out 1.5s infinite;
 
-    background-color: $background-color;
-    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
-
     border: 30px solid transparent;
     border-image-source: url("../../assets/images/bazel.png");
     border-image-slice: 30 fill;
@@ -31,10 +28,6 @@
       max-width: 100%;
       word-wrap: break-word;
       text-wrap: wrap;
-    }
-
-    pre {
-      padding: 18px;
     }
 
     a {

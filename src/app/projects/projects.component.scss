@@ -1,8 +1,26 @@
 @use "../../assets/styles/styles.scss";
+@use "../../assets/styles/keyframes.scss";
 
 .tablet {
   background-color: #222;
-  border: 2px solid #444;
+
+  .card-container {
+    border: 5px solid black;
+
+    .card {
+      border: 3px solid black;
+
+      &:hover {
+        transition: 1.5s;
+        transform: scale(1.1);
+      }
+
+      .show {
+        opacity: 1 !important;
+        transition: opacity 1.5s;
+      }
+    }
+  }
 }
 
 ::-webkit-scrollbar {
@@ -19,9 +37,5 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-track:hover {
-  background-color: #ddd;
+  background-color: black;
 }
