@@ -4,4 +4,5 @@ export interface Projects {
   company: string;
   description: string;
   img: string;
+  logo: string;
 }

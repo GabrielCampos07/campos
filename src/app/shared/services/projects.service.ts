@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { IProjectsService } from '../models/projects.service.interface';
-import { HttpClient } from '@angular/common/http';
 import { Projects } from '../models/projects';
 import { Observable, of } from 'rxjs';
 import projects from '../mocks/projects.json';
@@ -9,7 +8,7 @@ import projects from '../mocks/projects.json';
   providedIn: 'root',
 })
 export class ProjectsService implements IProjectsService {
-  constructor(private httpClient: HttpClient) {}
+  constructor() {}
 
   private projects: Projects[] = projects;
 
@@ -18,6 +17,6 @@ export class ProjectsService implements IProjectsService {
   }
 
   getProject(id: number): Observable<Projects> {
-    return of(this.projects.find((project) => project.id === id)!);
+    return of(this.projects.find((project: Projects) => project.id == id)!);
   }
 }

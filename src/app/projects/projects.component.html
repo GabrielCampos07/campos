@@ -8,6 +8,7 @@
         class="card-container padding-10 overflow-hidden background-screens overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
       >
         <div
+          *ngIf="!id; else projectInformation"
           class="gap-10 full-width-height justify-content-space-around display-flex flex-wrap"
         >
           <div
@@ -15,6 +16,7 @@
             *ngFor="let project of projects; let index = index"
             (mouseover)="cursorInIndex = index"
             (mouseout)="cursorInIndex = undefined"
+            (click)="redirectTo(project.id)"
           >
             <img
               class="border-radius-5 cursor-pointer full-width-height"
@@ -22,7 +24,7 @@
               [alt]="project.company + '-logo'"
             />
             <div
-              class="position-absolute bottom-0 cursor-pointer full-width"
+              class="position-absolute bottom-0 cursor-pointer full-width height-vh-5"
               [style.opacity]="0"
               [class.show]="cursorInIndex === index"
               [class]="project.company.toLowerCase() + '-background'"
@@ -31,11 +33,30 @@
                 {{ project.name.toUpperCase() }}
               </h1>
               <p class="f-15 font-vt323 font-limited">
-                {{ project.description }}
+                {{ project.description | translate }}
               </p>
             </div>
           </div>
         </div>
+        <ng-template #projectInformation>
+          <div class="full-width-height padding-10">
+            <div class="display-flex-center gap-10">
+              <img
+                class="height-vh-10 width-vw-10"
+                [src]="projectSelected.logo"
+                [alt]="projectSelected.company"
+              />
+              <h1 class="font-vt323 color-white f-vw-4">
+                {{ projectSelected.name.toUpperCase() }}
+              </h1>
+            </div>
+            <p
+              class="font-vt323 color-white f-vw-2 line-height-vw-3 white-space-pre-line"
+            >
+              {{ projectSelected.description | translate }}
+            </p>
+          </div>
+        </ng-template>
       </div>
     </div>
   </div>
