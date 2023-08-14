@@ -5,8 +5,21 @@
       class="tablet width-percent-80 height-percent-80 display-flex-center position-relative overflow-hidden border-radius-20"
     >
       <div
-        class="card-container padding-10 overflow-hidden background-screens overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
+        class="card-container overflow-hidden background-screens overflow-y-auto height-percent-90 width-percent-90 border-radius-15"
       >
+        <div
+          class="display-flex-center full-width menu-tablet padding-10 justify-content-space-between color-white"
+        >
+          <div class="display-flex align-itens-flex-end">
+            <div class="bar position-relative width-px-10 height-px-5"></div>
+            <div class="bar position-relative width-px-10 height-px-10"></div>
+            <div class="bar position-relative width-px-10 height-px-15"></div>
+            <div class="bar position-relative width-px-10 height-px-20"></div>
+          </div>
+          <div class="battery width-px-40 height-px-20">
+            <div class="battery-fill width-percent-70 height-percent-100"></div>
+          </div>
+        </div>
         <div
           *ngIf="!id; else projectInformation"
           class="gap-10 full-width-height justify-content-space-around display-flex flex-wrap"
