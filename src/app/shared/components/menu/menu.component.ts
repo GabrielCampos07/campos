@@ -12,6 +12,11 @@ import { Menu } from '../../models/menu';
 export class MenuComponent implements OnInit {
   menuItems: Menu[] = [
     {
+      routeName: '/choose-language',
+      titleName: 'Menu.Lingua',
+      icon: 'language',
+    },
+    {
       routeName: '/home',
       titleName: 'Menu.Casa',
       icon: 'home',
@@ -20,11 +25,6 @@ export class MenuComponent implements OnInit {
       routeName: '/projects',
       titleName: 'Menu.Projetos',
       icon: 'assignment',
-    },
-    {
-      routeName: '/courses',
-      titleName: 'Menu.Cursos',
-      icon: 'book',
     },
     {
       routeName: '/contact',

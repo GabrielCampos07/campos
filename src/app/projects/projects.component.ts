@@ -11,6 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ProjectsComponent implements OnInit {
   cursorInIndex?: number;
   id?: number;
+  loading: boolean = true;
 
   projects: Projects[] = [];
   projectSelected: Projects = {

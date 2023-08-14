@@ -11,12 +11,20 @@
           class="display-flex-center full-width menu-tablet padding-10 justify-content-space-between color-white"
         >
           <div class="display-flex align-itens-flex-end">
-            <div class="bar position-relative width-px-10 height-px-5"></div>
-            <div class="bar position-relative width-px-10 height-px-10"></div>
-            <div class="bar position-relative width-px-10 height-px-15"></div>
-            <div class="bar position-relative width-px-10 height-px-20"></div>
+            <div
+              class="bar position-relative width-px-10 height-px-5 margin-right-5"
+            ></div>
+            <div
+              class="bar position-relative width-px-10 height-px-10 margin-right-5"
+            ></div>
+            <div
+              class="bar position-relative width-px-10 height-px-15 margin-right-5"
+            ></div>
+            <div
+              class="bar position-relative width-px-10 height-px-20 margin-right-5"
+            ></div>
           </div>
-          <div class="battery width-px-40 height-px-20">
+          <div class="battery width-px-40 height-px-20 margin-right-20">
             <div class="battery-fill width-percent-70 height-percent-100"></div>
           </div>
         </div>
@@ -40,32 +48,30 @@
               class="position-absolute bottom-0 cursor-pointer full-width height-vh-5"
               [style.opacity]="0"
               [class.show]="cursorInIndex === index"
-              [class]="project.company.toLowerCase() + '-background'"
+              class="{{ project.company.toLowerCase() }}-background"
             >
-              <h1 class="f-vw-1 font-vt323">
+              <h1 class="f-vw-1">
                 {{ project.name.toUpperCase() }}
               </h1>
-              <p class="f-15 font-vt323 font-limited">
+              <p class="f-15 font-limited">
                 {{ project.description | translate }}
               </p>
             </div>
           </div>
         </div>
         <ng-template #projectInformation>
-          <div class="full-width-height padding-10">
+          <div class="container-information full-width-height padding-10">
             <div class="display-flex-center gap-10">
               <img
-                class="height-vh-10 width-vw-10"
+                class="height-vh-10 width-vw-8"
                 [src]="projectSelected.logo"
                 [alt]="projectSelected.company"
               />
-              <h1 class="font-vt323 color-white f-vw-4">
+              <h1 class="color-white f-vw-4">
                 {{ projectSelected.name.toUpperCase() }}
               </h1>
             </div>
-            <p
-              class="font-vt323 color-white f-vw-2 line-height-vw-3 white-space-pre-line"
-            >
+            <p class="color-white f-vw-2 line-height-vw-3 white-space-pre-line">
               {{ projectSelected.description | translate }}
             </p>
           </div>

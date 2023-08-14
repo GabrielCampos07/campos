@@ -1,5 +1,5 @@
 export interface Menu {
-  "routeName": string;
-  "titleName": string;
-  "icon": string;
+  routeName: string;
+  titleName: string;
+  icon: string;
 }

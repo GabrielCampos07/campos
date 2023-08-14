@@ -1,6 +1,10 @@
-@use "../../assets/styles/styles.scss";
 @use "../../assets/styles/keyframes.scss";
 @import "../../assets/styles/variables";
+
+mat-icon {
+  transform: rotate(180deg);
+  color: $hover-color;
+}
 
 .container-about-me {
   margin-top: 10vw;
@@ -47,4 +51,37 @@
   padding: 15px 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1366px) {
+  #output {
+    line-height: 22px;
+  }
+
+  .speech-bubble {
+    p {
+      font-size: 15px;
+    }
+  }
+  .planet {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  .container-about-me {
+    width: 40%;
+
+    #output {
+      padding: 0;
+      padding-left: 50px;
+      line-height: 45px;
+    }
+
+  }
+  .planet {
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -1,0 +1,65 @@
+
+@import "../../assets/styles/variables";
+
+.information-container {
+  .title,
+  .contact-informations {
+    border: 2px solid $hover-color;
+    box-shadow: 0px 0px 10px rgba(144, 238, 144, 0.8);
+  }
+
+  .title {
+    background-color: rgba(14, 17, 17, 0.6);
+    border-radius: 20px 20px 0 0;
+    color: $hover-color;
+  }
+
+  .contact-informations {
+    background-color: rgba(14, 17, 17, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .border {
+      border-right: 1px solid white;
+    }
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  .information-container {
+    width: 50%;
+
+    .title {
+      font-size: 2vw;
+    }
+
+    .contact-informations {
+      img {
+        width: 6vw;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .information-container {
+    padding: 0;
+    .contact-informations {
+      img {
+        width: 8vw;
+      }
+
+      p {
+        font-size: 1vw;
+      }
+    }
+  }
+}

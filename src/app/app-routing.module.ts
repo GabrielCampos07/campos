@@ -23,6 +23,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./projects/projects.module').then((m) => m.ProjectsModule),
   },
+  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
 ];
 
 @NgModule({

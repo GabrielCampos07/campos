@@ -1,0 +1,38 @@
+<div class="container">
+  <app-menu></app-menu>
+  <div
+    class="container-contact-me display-flex-center height-percent-80 full-width margin-top-30"
+  >
+    <div
+      class="information-container width-percent-80 full-height padding-20 display-flex-column align-itens-center"
+    >
+      <h1 class="title text-align-center f-vw-3 width-percent-50">
+        {{ "Contato.ContateMe" | translate }}
+      </h1>
+      <div class="contact-informations border-radius-20 full-width-height">
+        <div
+          *ngFor="let contact of contacts; last as isLast"
+          class="display-flex-column align-itens-center gap-10 margin-top-20"
+          [class.border]="!isLast"
+        >
+          <img
+            class="width-vw-10 height-vh-12 cursor-pointer"
+            [src]="contact.img"
+            alt="{{ contact.name }}-logo"
+            (click)="sentTo(contact.link)"
+          />
+          <h1 class="{{ contact.name.toLowerCase() }}-color">
+            {{ contact.name }}
+          </h1>
+          <p
+            class="color-white f-25 text-align-start padding-15 white-space-pre-line"
+          >
+            {{ contact.text | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <a href="https://pt.vecteezy.com/free-png-pt/gmail">Gmail PNGs por Vecteezy</a> -->

@@ -8,12 +8,12 @@
   "Menu": {
     "Casa": "Home",
     "Projetos": "Projects",
-    "Cursos": "Courses",
+    "Lingua": "Language",
     "Contato": "Contact"
   },
   "Campos": {
     "SobreMimTitulo": "About Me",
-    "SobreMimTexto": "First of all, I apologize, we are experiencing technical issues here on the spaceship. Anyway, hello! My name is Gabriel Campos de Paula, but you can just call me Campos. I've come through this means to introduce myself. Currently, I'm unemployed, but I have already participated in various projects. Such as: \n Development and maintenance of systems for 1000+ users in a large glass industry company using .NET Core, ASP.NET, AJAX, Razor, MySQL, GIT, Angular2+, and AngularJS. \n You can see the rest of the projects in the projects tab! \n I'm also taking some ongoing Angular courses, which I'm specializing in. \n In this spaceship, I wanted to play around with animations a bit and let my imagination flow, allowing me to create whatever I want. Anyway, welcome aboard and enjoy this journey!",
+    "SobreMimTexto": "First of all, I apologize, we are experiencing technical issues here on the spaceship. Anyway, hello! My name is Gabriel Campos de Paula, but you can just call me Campos. I've come through this means to introduce myself. Currently, I'm unemployed, but I have already participated in various projects.\n\nYou can see  projects in the projects tab, remembering that I used Angular in all of them!\n\nI'm also taking some ongoing Angular courses, which I'm specializing in.\n\nIn this spaceship, I wanted to play around with animations a bit and let my imagination flow, allowing me to create whatever I want. Anyway, welcome aboard and enjoy this journey!",
     "Localizacao": "I am located in São José dos Campos, São Paulo. Come and visit!"
   },
   "Projetos": {
@@ -56,6 +56,20 @@
     "Viasat": {
       "ViasatOnTech": {
         "Descricao": "The VIASAT ON TECH by VIASAT is designed to optimize and streamline the maintenance and technical support process in the field. The application offers specific features and functionalities to assist technicians during their daily activities. Here's a description of how the application would work:\n\nEfficient Scheduling and Routing: The application allows technicians to view their scheduled tasks and optimized routes for service visits. This ensures they can reach locations more efficiently.\n\nCustomer Details and Service History: The application provides instant access to customer information, including contact details, previous service history, and installed equipment.\n\nRemote Diagnostics and Troubleshooting: Technicians can use the application to perform remote diagnostics on equipment, identifying common issues and implementing basic solutions without needing to visit the site.\n\nReal-time Communication: The application enables effective communication between field technicians and the internal support team. They can exchange information, photos, and videos in real time to receive guidance or additional assistance.\n\nAccess to Manuals and Documentation: Technicians can access equipment manuals, troubleshooting guides, and technical information directly through the application.\n\nActivity Logging and Updates: Technicians can log all performed activities, updates made, and solutions applied within the application, ensuring an accurate record of each service visit.\n\nDigital Signatures and Documents: The application allows customers to digitally sign service reports, eliminating the need for physical paperwork.\n\nOffline Access: Technicians can access essential information and work within the application even in areas without an internet connection. The information syncs as soon as a connection is reestablished.\n\nSpecial Tool Support: The application can integrate with diagnostic tools and specific equipment to assist technicians in their tasks.\n\nFeedback and Continuous Improvement: Technicians can provide feedback on recurring issues, improvement suggestions, and other important information, contributing to ongoing service enhancements.\n\nTracking and Reporting: VIASAT can monitor technicians' performance, generate activity reports, and identify areas that need improvement.\n\nTraining and Updates: The application can provide training resources and regular updates to keep technicians informed about the latest technologies and procedures.\n\nIn summary, the VIASAT street technician application is an essential tool that enables more efficient service, real-time communication, and effective problem-solving, enhancing the quality of service provided to customers."
+      }
+    }
+  },
+  "Contato": {
+    "ContateMe": "Contact Me",
+    "Social": {
+      "Linkedin": {
+        "Descricao": "If you wish to connect or get in touch with me, LinkedIn is a great way to establish a professional connection. Feel free to send a message, share information, or ask questions directly through the platform.\n\nI'm looking forward to getting to know you and discussing opportunities for collaboration, networking, and knowledge sharing.\n\nClick on the icon to access my LinkedIn profile and initiate a conversation.\n\nI am committed to building meaningful professional relationships and look forward to receiving your message soon!"
+      },
+      "WhatsApp": {
+        "Descricao": "I want to make contacting me as easy as possible for you. If you have any questions, comments, or just want to chat, feel free to send me a message on WhatsApp.\n\nI'm ready to address any inquiries you may have.\n\nClick on the icon to start a conversation on WhatsApp with me.\n\nWe appreciate your interest in reaching out to us and look forward to receiving your messages eagerly!"
+      },
+      "Gmail": {
+        "Descricao": "I'm glad to hear from you! If you have any questions, suggestions, or comments, please feel free to send me an email.\n\nGmail is an effective way to communicate in detail and ensure that I'll receive your message.\n\nSend your message to:\ngabriel.c.depaula@gmail.com\n\nI'm always ready to assist and respond to any questions you might have.\n\nI look forward to receiving your messages in my inbox soon!"
       }
     }
   }

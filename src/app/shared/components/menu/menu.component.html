@@ -1,4 +1,4 @@
-<div class="menu width-vw-50 height-px-50 border-radius-4 transform-rotate-180">
+<div class="menu width-vw-50 border-radius-4 transform-rotate-180">
   <ul class="display-flex justify-content-space-around transform-rotate-180">
     <li
       *ngFor="let menu of menuItems"
@@ -6,7 +6,9 @@
       [routerLink]="menu.routeName"
       routerLinkActive="active"
     >
-      <mat-icon class="color-white width-px-50 height-px-50 f-50">
+      <mat-icon
+        class="color-white width-px-50 height-px-50 f-50 text-align-center"
+      >
         {{ menu.icon }}</mat-icon
       >
       <a class="color-white font-embezzler f-25">
