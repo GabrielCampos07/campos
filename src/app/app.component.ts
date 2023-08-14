@@ -11,13 +11,13 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // this.spaceTravelSound = new Howl({
-    //   src: ['assets/sounds/space-travel-sound.mp3'],
-    //   volume: 0.1,
-    // });
+    this.spaceTravelSound = new Howl({
+      src: ['assets/sounds/space-travel-sound.mp3'],
+      volume: 0.1,
+    });
 
-    // setInterval(() => {
-    //   this.spaceTravelSound?.play();
-    // }, 15000);
+    setInterval(() => {
+      this.spaceTravelSound?.play();
+    }, 15000);
   }
 }
