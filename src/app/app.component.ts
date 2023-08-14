@@ -1,23 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Howl } from 'howler';
 
 @Component({
   selector: 'app-root',
-  template: `<router-outlet></router-outlet>`,
+  template: `<router-outlet></router-outlet>
+    <app-sound-config></app-sound-config>`,
 })
-export class AppComponent implements OnInit {
-  spaceTravelSound: Howl | undefined;
-
+export class AppComponent {
   constructor() {}
-
-  ngOnInit(): void {
-    this.spaceTravelSound = new Howl({
-      src: ['assets/sounds/space-travel-sound.mp3'],
-      volume: 0.1,
-    });
-
-    setInterval(() => {
-      this.spaceTravelSound?.play();
-    }, 15000);
-  }
 }
