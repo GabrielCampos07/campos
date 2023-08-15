@@ -65,12 +65,10 @@
 
 @media screen and (max-width: 768px) {
   .container-contact-me {
-    margin-top: 15px;
+    margin-top: 0;
 
     .information-container {
       width: 100%;
-      border-top: 1px solid #90ee90;
-      box-shadow: 0 0 15px 0 rgba(144, 238, 144, 0.8);
 
       .title,
       .contact-informations {
@@ -78,6 +76,7 @@
         width: 100%;
         box-shadow: none;
         border-radius: 0;
+        background: none;
       }
 
       .title {
