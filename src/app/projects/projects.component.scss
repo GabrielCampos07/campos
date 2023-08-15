@@ -122,11 +122,12 @@
           height: 100%;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 140px 140px 140px;
           padding-top: 10px;
 
           .card {
-            height: 120px;
-            width: 120px;
+            height: 110px;
+            width: 110px;
 
             .informations {
               display: none;

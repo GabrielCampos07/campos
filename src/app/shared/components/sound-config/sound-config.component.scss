@@ -2,3 +2,10 @@ mat-icon {
   font-size: 50px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  mat-icon {
+    font-size: 30px;
+    color: white;
+  }
+}
