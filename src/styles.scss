@@ -164,11 +164,11 @@ app-sound-config {
 
 @for $i from 1 through 680 {
   .width-px-#{$i} {
-    width: #{$i}px !important;
+    width: #{$i}px;
   }
 
   .height-px-#{$i} {
-    height: #{$i}px !important;
+    height: #{$i}px;
   }
 
   .width-vw-#{$i} {

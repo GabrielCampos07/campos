@@ -19,3 +19,26 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .stars {
+    display: none;
+  }
+
+  .body-title-language {
+    h1 {
+      font-size: 18vw;
+    }
+    p {
+      font-size: 6vw;
+    }
+
+    select {
+      width: 100%;
+    }
+  }
+
+  .welcome-text {
+    font-size: 13vw;
+  }
+}

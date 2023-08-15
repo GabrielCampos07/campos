@@ -7,7 +7,7 @@ import { Howl } from 'howler';
   styleUrls: ['./sound-config.component.scss'],
 })
 export class SoundConfigComponent implements OnInit {
-  soundOn: boolean = true;
+  soundOn: boolean = false;
   spaceTravelSound: Howl | undefined;
 
   constructor() {
@@ -15,7 +15,7 @@ export class SoundConfigComponent implements OnInit {
       src: ['assets/sounds/space-travel-sound.mp3'],
       volume: 0.1,
       loop: true,
-      autoplay: true
+      autoplay: this.soundOn,
     });
   }
 

@@ -1,4 +1,3 @@
 <div class="sounds" (click)="soundMusic()">
-  <mat-icon *ngIf="soundOn">volume_up</mat-icon>
-  <mat-icon *ngIf="!soundOn">volume_off</mat-icon>
+  <mat-icon>{{ soundOn ? "volume_up" : "volume_off" }}</mat-icon>
 </div>

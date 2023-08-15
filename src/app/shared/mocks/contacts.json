@@ -6,12 +6,6 @@
     "img": "assets/images/social-media/linkedin.png"
   },
   {
-    "name": "WhatsApp",
-    "text": "Contato.Social.WhatsApp.Descricao",
-    "link": "https://wa.me/12991493657",
-    "img": "assets/images/social-media/whatsapp.png"
-  },
-  {
     "name": "Gmail",
     "text": "Contato.Social.Gmail.Descricao",
     "link": "https://mail.google.com/mail/u/0/#inbox?compose=new",

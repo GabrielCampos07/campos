@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let star of stars">
+  <div class="stars" *ngFor="let star of stars">
     <mat-icon
       *ngIf="show"
       aria-label="star"
@@ -63,7 +63,7 @@
       class="display-flex-center full-height position-absolute"
       *ngIf="isNextStep"
     >
-      <h1 class="color-white font-embezzler f-150">
+      <h1 class="welcome-text color-white font-embezzler f-150">
         {{ "Inicio.BemVindo" | translate }}
       </h1>
     </div>

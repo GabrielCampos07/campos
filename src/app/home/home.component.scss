@@ -6,7 +6,7 @@ mat-icon {
   color: $hover-color;
 }
 
-.container-about-me {
+.about-me {
   margin-top: 10vw;
 
   #monitor {
@@ -70,7 +70,7 @@ mat-icon {
 }
 
 @media screen and (min-width: 3440px) {
-  .container-about-me {
+  .about-me {
     width: 40%;
 
     #output {
@@ -78,10 +78,43 @@ mat-icon {
       padding-left: 50px;
       line-height: 45px;
     }
-
   }
   .planet {
     width: 300px;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-about-me {
+    height: 100%;
+
+    .about-me {
+      margin-top: 0;
+      width: 100%;
+
+      #monitor {
+        animation: none;
+        border: none;
+        border-image-source: none;
+        border-image-slice: none;
+
+        .texts {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+
+  .container-planet {
+    left: 0;
+
+    .speech-bubble {
+      width: 80%;
+
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
