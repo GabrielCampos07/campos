@@ -99,8 +99,17 @@ mat-icon {
         border-image-source: none;
         border-image-slice: none;
 
+        .scanlines {
+          display: none;
+        }
+
         .texts {
-          padding-top: 30px;
+          padding-top: 10px;
+
+          pre {
+            font-size: 16px;
+            line-height: 20px;
+          }
         }
       }
     }
