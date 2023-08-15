@@ -257,8 +257,8 @@ app-sound-config {
     font-size: #{$i}vw;
   }
 
-  .line-height-vw-#{$i} {
-    line-height: #{$i}vw;
+  .line-height-px-#{$i} {
+    line-height: #{$i}px;
   }
 }
 
