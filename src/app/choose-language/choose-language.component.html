@@ -35,11 +35,10 @@
         (change)="switchLanguage(selectedLang.value)"
         class="font-embezzler text-align-center f-30 width-px-600 height-px-40"
       >
-        <option value=""></option>
         <option
           *ngFor="let langague of translate.getLangs()"
           [value]="langague"
-          [selected]="langague === translate.currentLang"
+          [selected]="langague === actualLanguage"
         >
           {{
             langague === "pt"

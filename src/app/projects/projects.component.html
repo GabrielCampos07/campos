@@ -61,6 +61,9 @@
         </div>
         <ng-template #projectInformation>
           <div class="container-information full-width-height padding-10">
+            <mat-icon routerLink="/projects" class="color-white f-30 cursor-pointer"
+              >arrow_back</mat-icon
+            >
             <div class="display-flex-center gap-10">
               <img
                 class="height-vh-10 width-vw-8"
@@ -71,7 +74,9 @@
                 {{ projectSelected.name.toUpperCase() }}
               </h1>
             </div>
-            <p class="color-white f-vw-2 line-height-px-50 white-space-pre-line padding-20">
+            <p
+              class="color-white f-vw-2 line-height-px-50 white-space-pre-line padding-20"
+            >
               {{ projectSelected.description | translate }}
             </p>
           </div>

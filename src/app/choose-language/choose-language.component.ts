@@ -45,12 +45,17 @@ export class ChooseLanguageComponent implements OnInit {
   show: boolean = true;
   isNextStep: boolean = false;
   terminalSound: Howl | undefined;
+  actualLanguage =
+    window.localStorage.getItem('lang') ||
+    window.navigator.language.substring(0, 2);
 
   constructor(public translate: TranslateService, private router: Router) {
+    if (this.actualLanguage !== 'pt' && this.actualLanguage !== 'en')
+      this.actualLanguage = 'en';
+
     this.stars.length = 100;
     translate.addLangs(['pt', 'en']);
-    translate.setDefaultLang('pt');
-    window.localStorage.clear();
+    translate.setDefaultLang(this.actualLanguage);
   }
 
   ngOnInit(): void {
@@ -58,7 +63,7 @@ export class ChooseLanguageComponent implements OnInit {
 
     this.terminalSound = new Howl({
       src: ['assets/sounds/dramatic-sound.mp3'],
-      volume: 0.2
+      volume: 0.2,
     });
   }
 
