@@ -16,7 +16,7 @@
   .contact-informations {
     background-color: rgba(14, 17, 17, 0.6);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
 
     .border {
       border-right: 1px solid white;

@@ -40,7 +40,7 @@ const fadeOut = trigger('fadeOut', [leaveTrans]);
   styleUrls: ['./choose-language.component.scss'],
   animations: [fadeIn, fadeOut, pulseOnEnterAnimation()],
 })
-export class ChooseLanguageComponent implements OnInit {
+export class ChooseLanguageComponent {
   stars: number[] = [];
   show: boolean = true;
   isNextStep: boolean = false;

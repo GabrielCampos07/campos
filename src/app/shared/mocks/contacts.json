@@ -6,6 +6,12 @@
     "img": "assets/images/social-media/linkedin.png"
   },
   {
+    "name": "GitHub",
+    "text": "Contato.Social.GitHub.Descricao",
+    "link": "https://github.com/GabrielCampos07",
+    "img": "assets/images/social-media/github.png"
+  },
+  {
     "name": "Gmail",
     "text": "Contato.Social.Gmail.Descricao",
     "link": "https://mail.google.com/mail/u/0/#inbox?compose=new",
