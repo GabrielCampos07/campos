@@ -12,7 +12,9 @@
       <div class="contact-informations border-radius-20 full-width-height">
         <div
           *ngFor="let contact of contacts; last as isLast"
-          class="display-flex-column align-itens-center gap-10 margin-top-20"
+          class="display-flex-column align-itens-center gap-10 margin-top-20  {{
+            contact.name.toLowerCase()
+          }}"
           [class.border]="!isLast"
         >
           <img

@@ -77,6 +77,7 @@
         box-shadow: none;
         border-radius: 0;
         background: none;
+        grid-template-columns: 1fr 1fr;
       }
 
       .title {
@@ -87,6 +88,10 @@
       .contact-informations {
         .border {
           border-right: 1px solid #90ee90;
+        }
+
+        .github {
+          display: none;
         }
 
         img {
