@@ -14,6 +14,7 @@
   }
 
   .contact-informations {
+    max-height: 100%;
     background-color: rgba(14, 17, 17, 0.6);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -42,13 +43,28 @@
       }
 
       p {
-        font-size: 30px;
+        font-size: 28px;
       }
     }
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  .information-container {
+    padding: 0;
+    .contact-informations {
+      img {
+        width: 12vw;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 3439px) {
   .information-container {
     padding: 0;
     .contact-informations {
@@ -57,7 +73,7 @@
       }
 
       p {
-        font-size: 1vw;
+        font-size: 22px;
       }
     }
   }
