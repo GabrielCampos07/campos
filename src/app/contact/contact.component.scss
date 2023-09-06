@@ -58,10 +58,14 @@
       }
 
       p {
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
     }
   }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 
 @media screen and (min-width: 1920px) and (max-width: 3439px) {
